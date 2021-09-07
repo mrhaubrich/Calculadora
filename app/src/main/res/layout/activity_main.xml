@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+
+        <EditText
+                android:id="@+id/txtNumber"
+                style="@style/Widget.MaterialComponents.TimePicker.Display.TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/design_default_color_primary_dark"
+                android:maxLength="200"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:gravity="right"
+                android:scrollbars="horizontal"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="100dp"
+                android:layout_height="125dp"
+                android:baselineAligned="false">
+
+                <Button
+                    android:id="@+id/btnAbre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/btnAbre"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"  />
+
+                <Button
+                    android:id="@+id/btnFecha"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btnFecha"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"  />
+
+                <Button
+                    android:id="@+id/btnClr"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btnClr"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"  />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btnDelete"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"  />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="100dp"
+                android:layout_height="125dp"
+                android:baselineAligned="false">
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/btn7"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="numbersClick"/>
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btn8"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="numbersClick" />
+
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btn9"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="numbersClick" />
+
+                <Button
+                    android:id="@+id/btnMinus"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btnMinus"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="operatorClick"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:baselineAligned="false">
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btn4"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="numbersClick"  />
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btn5"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="numbersClick"  />
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btn6"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="numbersClick" />
+
+                <Button
+                    android:id="@+id/btnPlus"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btnPlus"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="operatorClick" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btn1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="numbersClick"  />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btn2"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="numbersClick"  />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btn3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="numbersClick"  />
+
+                <Button
+                    android:id="@+id/btnMult"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btnMult"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="operatorClick" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="500dp"
+                android:baselineAligned="false">
+
+                <Button
+                    android:id="@+id/btnResult"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:baselineAligned="false"
+                    android:text="@string/btnResult"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="operatorClick" />
+
+                <Button
+                    android:id="@+id/btn0"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btn0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="numbersClick"  />
+
+                <Button
+                    android:id="@+id/btnDot"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btnDot"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"  />
+
+                <Button
+                    android:id="@+id/btnDiv"
+                    android:layout_width="100dp"
+                    android:layout_height="125dp"
+                    android:text="@string/btnDiv"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="operatorClick" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
